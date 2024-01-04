@@ -1,0 +1,67 @@
+.odd_piece {
+    width: 100px;
+    height: 100px;
+    background: #769656;
+    border: 0;
+    outline: 0;
+
+    &:focus {
+        outline: 0;
+    }
+
+    &:focus-visible {
+        outline: 0;
+    }
+}
+
+.even_piece {
+    width: 100px;
+    height: 100px;
+    background-color: #eeeed2;
+    border: 0;
+    outline: 0;
+
+    &:focus {
+        outline: 0;
+    }
+
+    &:focus-visible {
+        outline: 0;
+    }
+}
+
+.chess_image {
+    z-index: 999;
+    position: relative;
+    height: 80px;
+}
+
+.active {
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+    border: 1px solid #000;
+}
+
+.cursor {
+    cursor: grab;
+}
+
+.convert_popover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    .inner_convert {
+        position: absolute;
+        top: 46%;
+        left: 31%;
+        display: flex;
+        gap: 5px;
+        
+        button {
+            background: gray;
+            cursor: pointer;
+        }
+    }
+}
